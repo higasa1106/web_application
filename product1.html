@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html　lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>19154NHU_1_baba</title>
+</head>
+<body>
+    <h1>作品1　時短ババ抜き</h1>
+
+    <h2>どちらかを引いてね！Aを引けばあなたの勝ちだよ！</h2>
+
+    対戦相手
+    <div id="cpu">
+        <img id="card_cpu1" src="img/card_back.png" width="200" height="300" onClick="change1()">
+        <img id="card_cpu2" src="img/card_back.png" width="200" height="300" onClick="change2()">
+    </div><br>
+
+
+    <div id="user">
+    <img src="img/card_spade_01.png" width="200" height="300"></div>
+    あなた<br>
+    <div id="msg">勝てるかな？</div>
+
+
+<style>
+    #cpu{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #card_cpu1{
+        cursor:pointer;
+    }
+    #card_cpu1:hover{
+        margin-top: -10px;
+    }
+
+    #card_cpu2{
+        justify-content: flex-start;
+        cursor:pointer;
+    }
+    #card_cpu2:hover{
+        margin-top: -10px;
+    }
+</style>
+
+
+<script>
+      
+    //プレイヤーがカードをクリックしたら
+
+    var img_src = new Array("img/card0.png","img/card1.png");
+    var i = 0;
+    var rndm = Math.floor(Math.random()*2);
+
+    function change1() {
+  
+        if( i == 1 ){                                                           //既にchange2を実行していたら何もしない
+        } else {
+            if (rndm == 0) {                                                      
+                document.getElementById("card_cpu1").src = img_src[0];          //iが0なら勝ち
+                msg = "あなたの勝ち！";                                         
+            } else {
+                document.getElementById("card_cpu1").src = img_src[1];          //iが1なら負け
+                msg = "あなたの負け・・・。";
+            }
+            document.getElementById('msg').innerHTML = msg;
+        }
+        i = 1;
+
+    };
+
+    function change2() {
+ 
+        if( i == 1 ){                                                           //既にchange1を実行していたら何もしない
+        } else {
+            if (rndm == 0) {
+                document.getElementById("card_cpu2").src = img_src[0];         //iが0なら勝ち
+                msg = "あなたの勝ち！";                                         
+            } else {
+                document.getElementById("card_cpu2").src = img_src[1];         //iが1なら負け
+                msg = "あなたの負け・・・。";
+            }
+            document.getElementById('msg').innerHTML = msg;
+        }
+        i = 1;
+    };
+
+
+
+</script>
+
+    <br>
+    <div id="btn">
+        <div id="btn6">
+        <a onclick="window.location.reload(true);">
+            <i class="fa fa-refresh" aria-hidden="true"></i><span>もう一度プレイ</span>
+        </a></div>
+    </div>
+    <br>
+
+    <div id="btn">
+        <div id="btn1"><a href="product1.html">１．時短ババ抜き</a></div>
+        <div id="btn2"><a href="product2.html">２．サイダー    </a></div>
+        <div id="btn3"><a href="product3.html">３．オーディオ  </a></div>
+        <div id="btn4"><a href="product4.html">４．ビデオ      </a></div>
+    </div>
+    <br>
+
+    <div id="btn">
+        <div id="btn5"><a href="index.html">タイトルへ戻る</a></div>
+    </div>
+
+</body>
+</html>

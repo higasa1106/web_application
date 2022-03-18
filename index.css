@@ -1,0 +1,143 @@
+body{
+    background-color:#DCFBFF;
+    text-align:center;
+    font-size:16px;
+    color:"#221395";
+    font-family:Arial,sans-serif;
+}
+
+h1{
+    color:#22336b;
+}
+
+h2{
+    color:#44226b;
+}
+
+p{
+    padding-left:40px;
+    text-align:left;
+}
+
+span{
+    font-size:20px;
+    color:#4e19df;
+}
+
+#box1{
+    width:750px;
+    margin:0px auto;
+    border:dotted 2px skyblue;
+}
+
+#box2{
+    width:750px;
+    margin:0px auto;
+    border:dotted 2px rgb(195, 135, 235);
+}
+
+
+#btn{      
+    display: flex;
+    justify-content: center;
+}  
+
+#btn1{
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;
+    border-radius:5px;
+    background:#ffd7d4;
+    box-shadow:0 4px 0 #cf9292;
+    margin:10px;
+    cursor:pointer;
+}
+#btn1:hover{
+    opacity:0.8;
+}
+
+#btn2{
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;
+    border-radius:5px;
+    background:#a3c0ff;
+    box-shadow:0 4px 0 #5a87ca;
+    margin:10px;
+    cursor:pointer;
+}
+#btn2:hover{
+    opacity:0.8;
+}
+
+#btn3{
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;;
+    border-radius:5px;
+    background:#bcffaf;
+    box-shadow:0 4px 0 #7edd83;
+    margin:10px;
+    cursor:pointer;
+}
+#btn3:hover{
+    opacity:0.8;
+}
+
+#btn4{
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;
+    border-radius:5px;
+    background:#fffd99;
+    box-shadow:0 4px 0 #cfc863;
+    margin:10px;
+    cursor:pointer;
+}
+#btn4:hover{
+    opacity:0.8;
+}
+
+#btn5{
+    justify-content: center;
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;
+    border-radius:5px;
+    background:#b69cff;
+    box-shadow:0 4px 0 #6e63cf;
+    margin:10px;
+    cursor:pointer;
+}
+#btn5:hover{
+    opacity:0.8;
+}
+
+#btn6{
+    justify-content: center;
+    color:#943384;
+    width:200px;
+    height:50px;
+    padding:5px;
+    padding-top:30px;
+    border-radius:5px;
+    background:#ffc3ff;
+    box-shadow:0 4px 0 #e0b0dc;
+    margin:10px;
+    cursor:pointer;
+}
+#btn6:hover{
+    opacity:0.8;
+}
+
+
+#msg{
+    color: #22237e;
+    font-size: 30px;
+}
+
